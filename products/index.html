@@ -1,0 +1,56 @@
+<!-- index.html -->
+<div class="container mx-auto px-4 py-8">
+    <div id="categoryPath" class="text-sm text-gray-500 mb-4"></div>
+
+    <div class="product-info-wrap">
+        <div class="product-image-section">
+            <div class="relative">
+                <img id="productImage" class="product-main-image" alt="" />
+                <span id="badgeText" class="product-badge"></span>
+            </div>
+        </div>
+
+        <div class="product-info-section">
+            <h1 id="productName" class="product-title"></h1>
+
+            <div class="rating-wrap">
+                <span id="ratingStars" class="rating-stars"></span>
+                <span id="reviewCount" class="review-count"></span>
+            </div>
+
+            <div class="price-info">
+                <div class="price-row">
+                    <span id="discountPercent" class="discount-rate"></span>
+                    <span id="price" class="current-price"></span>
+                    <span id="originalPrice" class="original-price"></span>
+                </div>
+                <div class="price-benefits">
+                    <div class="reward-cash">
+                        <span class="cash-icon">적립</span>
+                        <span class="cash-text">최대 2,800원 쿠페이 적립</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-row">
+                    <span class="delivery-title">배송</span>
+                    <span class="delivery-content">
+                        <span class="delivery-highlight">무료배송</span>
+                        <span>내일(월) 도착 보장 (10시간 33분 내 주문 시)</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-cart" onclick="handleAddToCart()">장바구니 담기</button>
+                <button class="btn btn-buy" onclick="handleBuyNow()">바로구매</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-detail-section">
+        <h2 class="detail-title">상품 상세</h2>
+        <div id="productDescription" class="product-description"></div>
+    </div>
+</div>

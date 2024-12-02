@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 클론</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-6">
+                    <button class="menu-btn h-6 w-6 cursor-pointer">☰</button>
+                    <img src="/assets/images/coupang-logo.png" 
+                         alt="Coupang Logo" 
+                         class="h-9 cursor-pointer"
+                         onclick="location.href='/'">
+                </div>
+
+                <!-- Search Bar -->
+                <form id="searchForm" class="flex-1 max-w-3xl mx-8">
+                    <div class="relative">
+                        <input type="text"
+                               id="searchInput"
+                               placeholder="찾고 싶은 상품을 검색해보세요!"
+                               class="w-full px-4 py-2.5 border-2 border-blue-500 rounded-sm focus:outline-none">
+                        <button type="submit" 
+                                class="absolute right-0 top-0 h-full px-4 bg-blue-500 text-white">
+                            🔍
+                        </button>
+                    </div>
+                </form>
+
+                <!-- User Menu -->
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center cursor-pointer hover:text-blue-500"
+                         onclick="location.href='/my-account'">
+                        👤
+                        <span class="ml-1">▼</span>
+                    </div>
+                    <div class="flex items-center cursor-pointer hover:text-blue-500"
+                         onclick="location.href='/cart'">
+                        🛒
+                        <span class="ml-1">장바구니</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Categories -->
+            <div class="mt-4">
+                <ul id="quickCategories" class="flex justify-between">
+                    <!-- JavaScript로 동적 생성됨 -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 오늘의 판매자 특가 -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-text">오늘의</span>
+                    <span class="subtitle-red">판매자 특가</span>
+                    <span class="page-info">1/3</span>
+                </h2>
+            </div>
+            <div id="sellerDeals" class="product-grid">
+                <!-- JavaScript로 동적 생성됨 -->
+            </div>
+        </section>
+
+        <!-- 전세계 핫딜 -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-text">전세계 핫딜</span>
+                    <span class="subtitle">로켓직구 글로벌특가</span>
+                    <span class="page-info">1/3</span>
+                </h2>
+            </div>
+            <div id="globalDeals" class="product-grid">
+                <!-- JavaScript로 동적 생성됨 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+        <div class="container">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">입점/제휴문의</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객의 소리</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">쿠팡페이 이용약관</a></li>
+                <li><a href="#">신희망컨텍트</a></li>
+                <li><a href="#">제휴마케팅</a></li>
+                <li><a href="#">광고안내</a></li>
+                <li>
+                    <a href="#" class="global-site">
+                        Global Site
+                        <span>▼</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
